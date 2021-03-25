@@ -1,0 +1,19 @@
+inherit_gem:
+  rubocop-rootstrap:
+    - config/rails_edge.yml
+
+inherit_mode:
+  merge:
+    - Exclude
+
+AllCops:
+  Exclude:
+    - 'bin/**/*'
+    - 'node_modules/**/*'
+
+Metrics/LineLength:
+  Max: 100
+  Exclude:
+    - 'config/environments/production.rb'
+  IgnoredPatterns:
+    - '\A#'
