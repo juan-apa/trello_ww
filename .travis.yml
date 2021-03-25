@@ -12,5 +12,4 @@ before_script:
   - bundle exec rails db:create
   - bundle exec rails db:schema:load
 script:
-  - bundle exec rails code_analysis
-  - bundle exec rspec
+  - bundle exec rubocop .
