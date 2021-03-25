@@ -32,6 +32,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rubocop-rootstrap'
   gem 'rubocop-rails', require: false
+  gem 'rubocop-performance', '~> 1.10', '>= 1.10.2'
 end
 
 group :development do
